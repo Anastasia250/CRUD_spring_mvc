@@ -20,7 +20,7 @@
             <artifactId>spring-orm</artifactId>
             <version>${spring.version}</version>
         </dependency>
-        <!--        spring-webmvc нужен для web -->
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -32,7 +32,7 @@
             <version>${spring.version}</version>
         </dependency>
 
-        <!--        javax.servlet нужен для конфигоруционых классов -->
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -54,16 +54,16 @@
             <artifactId>hibernate-validator</artifactId>
             <version>6.1.6.Final</version>
         </dependency>
-        <!--        hibernate-entitymanager нужен для кофигоруционого класса class HibernateConfig -->
+
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
             <version>5.4.22.Final</version>
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.21</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.27</version>
         </dependency>
     </dependencies>
 

@@ -47,10 +47,9 @@ public class HibernateConfig {
         Properties props = new Properties();
         props.put("hibernate.show_sql", environment.getProperty("hibernate.show_sql"));
         props.put("hibernate.hbm2ddl.auto", environment.getProperty("hibernate.hbm2ddl.auto"));
-        props.put("hibernate.dialect", environment.getProperty("hibernate.dialect"));
 
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
-        factoryBean.setJpaVendorAdapter(vendorAdapter()); //??
+        factoryBean.setJpaVendorAdapter(vendorAdapter());
         factoryBean.setDataSource(dataSource());
         factoryBean.setJpaProperties(props);
         factoryBean.setPersistenceProviderClass(HibernatePersistenceProvider.class);
